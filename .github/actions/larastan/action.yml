@@ -1,0 +1,8 @@
+name: Run Larastan
+description: Run static analysis tool for Laravel
+runs:
+  using: "composite"
+  steps:
+    - name: Run Larastan
+      shell: bash
+      run: composer larastan
